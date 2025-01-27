@@ -7,143 +7,86 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <style>
 /* Responsive design for phones (portrait mode) */
-@media (max-width: 600px) {
-    .menu-button {
-        font-size: 24px;
-        padding: 10px;
-    }
-
-    .side-menu {
-        width: 50%;
-    }
-
-    .hero {
-        text-align: center;
-        padding: 20px;
-    }
-    .heading h1 {
-        font-size: 0.8rem;
-    }
-    .hero {
-
-    }
-    .hero .heading p {
-        font-size: 0.9rem;
-    }
-
-    .info-section {
-        display: flex;
+@media (max-width: 500px) {
+    .side-menu{
+        display:flex;
         flex-direction: column;
-        padding: 10px;
+        width:60%;
     }
-
-    .info-box {
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .contact {
-        padding: 20px;
-        font-size: 0.9rem;
-    }
-
-    .logotop, .logo {
-        width: 80px;
-    }
-}
-
-/* Responsive design for tablets (portrait mode) */
-@media (min-width: 601px) and (max-width: 900px) {
-    .menu-button {
-        font-size: 28px;
-        padding: 12px;
-    }
-
-    .side-menu {
-        width: 50%;
-    }
-
-    .hero {
-        text-align: center;
-        padding: 30px;
-    }
-
-    .hero .heading h1 {
-        font-size: 2rem;
-    }
-
-    .hero .heading p {
-        font-size: 1rem;
-    }
-
-    .info-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .info-box {
+    .side-menu .nav-button {
         width: 80%;
+        font-size: 10px; /* Smaller font size */
+        padding: 5px 10px; /* Reduced padding */
         text-align: center;
-        margin-bottom: 20px;
+        margin: 5px 0; /* Reduced margin */
     }
 
-    .contact {
-        padding: 30px;
-        font-size: 1rem;
-    }
-
-    .logotop, .logo {
-        width: 200px;
-    }
-}
-
-/* Responsive design for horizontal viewing on phones */
-@media (max-width: 600px) and (orientation: landscape) {
     .menu-button {
-        font-size: 20px;
-        padding: 8px;
-    }
-
-    .side-menu {
-        width: 60%;
-    }
-
-    .hero {
-        text-align: center;
-        padding: 10px;
-    }
-
-    .hero .heading h1 {
-        font-size: 1.2rem;
-    }
-
-    .hero .heading p {
-        font-size: 0.8rem;
-    }
-
-    .info-section {
+        margin-top: 0px;
+        font-size: 15px;
         padding: 5px;
+        align-items: center;
     }
-
+    .logotop{
+       width: 40px;
+       height:40px;
+       align-self:initial;
+       margin-right: 10px;
+    }
+    .heading1{
+        font-size:13px;
+        margin-left: 70px;
+        font-weight: 550;
+    }
+    .topred {
+        height: 60px; /* Reduce the height */
+        padding: 5px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Decrease font size for text inside */
+        display: flex;
+        align-items: center; /* Vertically center content */
+        justify-content: space-between;
+    }
+    .logo{
+        width:100px;
+        height:100px;
+        align-self:center;
+        justify-self: center;
+    }
+    .heading h1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .heading p{
+        font-size: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: 500;
+    }
+    /* Default styling for larger screens */
+    .info-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 25px;
+    }
     .info-box {
-        margin-bottom: 10px;
-    }
-
-    .contact {
+        width: 200px;
+        text-align: center;
+        margin: 20px;
         padding: 15px;
-        font-size: 0.8rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: Add subtle shadow */
     }
-
-    .logotop, .logo {
-        width: 100px;
+    .contact h2{
+        font-size: 34px;
+    }
+    .contact p{
+        font-size:14px;
     }
 }
 </style>
-</head>
 <body>
     <!-- Menu Button -->
     <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
@@ -164,7 +107,7 @@
     </div>
 
     <div class="topred">
-        <h1 class="heading">POSEIDON AQUATICS</h1>
+        <p class="heading1">POSEIDON AQUATICS</p>
         <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
     </div>
 
