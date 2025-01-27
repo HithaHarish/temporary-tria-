@@ -49,7 +49,29 @@
         align-items: center; /* Vertically center content */
         justify-content: space-between;
     }
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 90%;
+        height:450px;
+        justify-content: center;
+        margin-left: 25px;
+        margin-right:25px;
+    }
+    .fishimg{
+        height:180px;
+        width:300px;
+    }
 }
+
 @media (max-width: 800px) and (orientation: landscape) {
     .side-menu {
         display: flex;
@@ -87,6 +109,51 @@
         align-items: center;
         justify-content: space-between;
     }
+    .fishcontainer {
+    display: flex;
+    flex-wrap: wrap;          /* Wrap items to the next row if space is insufficient */
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+    gap: 20px;                /* Space between items */
+    min-height: 100vh;        /* Full screen height */
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.fishdetails {
+    flex: 1 1 200; /* Flexible width with spacing adjustment */
+    display: flex;             /* Enable flexbox for inner centering */
+    flex-direction: column;    /* Stack content vertically */
+    align-content: center;   /* Center content vertically */
+    justify-items: start;       /* Center content horizontally */
+    text-align: center;        /* Center text */ 
+    padding-top:30px;
+    padding-bottom:0px;          
+    border-radius: 8px;  
+    height: 350px;      /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.fishimg {
+    height: 120px;
+    width: 200px;
+    border-radius: 5px; /* Optional: Rounded corners for the image */
+    margin-bottom: 0px; /* Space below the image */
+    margin-top:0px;
+    justify-items: start;
+
+}
+.name{
+    font-size: 14px;
+}
+.price{
+    font-size:20px;
+}
+.cartbutton{
+    font-size:20px;
+    padding: 2px 2px 2px 2px;
+}
+
 }
 </style>
 </head>
@@ -136,8 +203,6 @@
             <p class="description" id="desc3" style="display: none;">The Crayfish is a freshwater crustacean with a lobster-like appearance, featuring a hard exoskeleton, two large claws, and a segmented body. It typically grows 3-6 inches (7-15 cm), though some species can reach 9 inches (23 cm), and has a lifespan of 2-5 years in captivity. Crayfish thrive in water temperatures of 18-25°C, pH levels of 6.5-8.0, and need a tank with hiding spots, clean water, and a secure lid (as they can climb). They are omnivores, feeding on algae, plants, pellets, and occasional protein sources like shrimp or fish.</p>
             <button class="cartbutton" onclick="addToCart('Cray Fish White 3-4', 350)">Add to Cart</button>
         </div>
-    </div>
-    <div class="fishcontainer">
         <div class="fishdetails">
             <img class="fishimg" src="crayfishorange.jpg" alt="Cray Fish Orange 3-4">
             <p  onclick="toggleDescription('desc4')" class="name">Cray fish (Orange) 3-4"</p>
