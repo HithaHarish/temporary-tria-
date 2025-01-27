@@ -14,7 +14,8 @@
     .side-menu{
         display:flex;
         flex-direction: column;
-        width:60%;
+        width:160px;
+        left: -160px;
     }
     .side-menu .nav-button {
         width: 80%;
@@ -56,11 +57,11 @@
         justify-self: center;
     }
     .heading h1{
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 600;
     }
     .heading p{
-        font-size: 14px;
+        font-size: 10px;
         padding-left: 30px;
         padding-right: 30px;
         font-weight: 500;
@@ -79,11 +80,93 @@
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: Add subtle shadow */
     }
+    .info-box p{
+        font-size:10px;
+    }
+    .info-box h3{
+        font-size: 17px;
+    }
     .contact h2{
-        font-size: 34px;
+        font-size: 25px;
     }
     .contact p{
-        font-size:14px;
+        font-size:10px;
+    }
+}
+@media (max-width: 600px) and (orientation: landscape) {
+    .side-menu {
+        display: flex;
+        flex-direction: column; /* Arrange buttons horizontally */
+        width: 170px;
+        left: -170px;
+        justify-content: space-around; /* Distribute the nav buttons evenly */
+    }
+
+    .side-menu .nav-button {
+        font-size: 8px; 
+        padding: 6px 12px;
+        margin: 1px 1px 1px 1px ;
+    }
+
+    .menu-button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .logotop {
+        width: 40px;
+        height: 40px;
+    }
+
+    .heading1 {
+        font-size: 14px;
+        margin-left: 70px;
+    }
+    .hero{
+        height: 300px;
+    }
+    .topred {
+        height: 65px;
+        padding: 10px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-top: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    .heading h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 22px;
+    }
+
+    .heading p {
+        font-size: 12px;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .info-section .info-box {
+        width: 150px; /* Set a specific width for portrait mode */
+        flex: 0 0 150px; /* Prevents flexbox from growing beyond the set width */
+        margin: 10px;
+    }
+
+    .contact h2 {
+        font-size: 25px;
+    }
+
+    .contact p {
+        font-size: 14px;
     }
 }
 </style>
