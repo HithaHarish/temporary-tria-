@@ -55,24 +55,39 @@
         justify-content: center; /* Horizontal centering */
         align-items: center;    /* Vertical centering */
         gap: 20px;              /* Space between items */
-        min-height: 100vh;      /* Full screen height */
+        min-height: 20vh;      /* Full screen height */
         padding: 10px;
         margin: 0 auto;
     }
     .fishdetails{
-        flex: 1 1 90%;
-        height:450px;
-        justify-content: center;
+        flex: 1 1 230px;
+        max-width: 250px;
+        height:230px;
+        justify-content: start;
         margin-left: 25px;
         margin-right:25px;
     }
     .fishimg{
-        height:180px;
-        width:300px;
+        height:100px;
+        width:200px;
+        margin-top:0px;
     }
+    .name{
+        margin: 1px auto;
+    font-size: 9px;
+}
+.price{
+    margin: 1px auto;
+    font-size:12px;
+}
+.cartbutton{
+    margin: 1px auto;
+    font-size:10px;
+    padding: 1px 1px 0px 0px;
+}
 }
 
-@media (max-width: 800px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
     .side-menu {
         display: flex;
         flex-direction: column; /* Arrange buttons horizontally */
@@ -110,51 +125,130 @@
         justify-content: space-between;
     }
     .fishcontainer {
-    display: flex;
-    flex-wrap: wrap;          /* Wrap items to the next row if space is insufficient */
-    justify-content: center;  /* Horizontal centering */
-    align-items: center;      /* Vertical centering */
-    gap: 20px;                /* Space between items */
-    min-height: 100vh;        /* Full screen height */
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.fishdetails {
-    flex: 1 1 200; /* Flexible width with spacing adjustment */
-    display: flex;             /* Enable flexbox for inner centering */
-    flex-direction: column;    /* Stack content vertically */
-    align-content: center;   /* Center content vertically */
-    justify-items: start;       /* Center content horizontally */
-    text-align: center;        /* Center text */ 
-    padding-top:30px;
-    padding-bottom:0px;          
-    border-radius: 8px;  
-    height: 350px;      /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
-}
-
-.fishimg {
-    height: 120px;
-    width: 200px;
-    border-radius: 5px; /* Optional: Rounded corners for the image */
-    margin-bottom: 0px; /* Space below the image */
-    margin-top:0px;
-    justify-items: start;
-
-}
-.name{
-    font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 180px;
+        max-width: 180px;
+        height:200px;
+        justify-content: start;
+    }
+    .fishimg{
+        height:80px;
+        width:150px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+    font-size: 7px;
 }
 .price{
-    font-size:20px;
+    margin: 1px auto;
+    font-size:10px;
 }
 .cartbutton{
-    font-size:20px;
-    padding: 2px 2px 2px 2px;
+    margin: 1px auto;
+    font-size:10px;
+    padding: 1px 1px 0px 0px;
+    width:130px;
+}
+.description{
+    font-size:5px;
+}
+}
+/* Responsive: Tablets in Horizontal Mode */
+@media screen and (mAX-width: 1300px) and (orientation: landscape) {
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 250px;
+        max-width: 250px;
+        height:300px;
+        justify-content: start;
+    }
+    .fishimg{
+        height:150px;
+        width:200px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+        font-size: 10px;
+    }
+    .price{
+    margin: 1px auto;
+    font-size:15px;
+}
+.cartbutton{
+    margin: 1px auto;
+    font-size:15px;
+    padding: 1px 1px 0px 0px;
+    width:180px;
+}
+.description{
+    font-size:5px;
+}
 }
 
+/* Responsive: Laptops */
+@media screen and (min-width: 1200px) {
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 300px;
+        max-width: 300px;
+        height:350px;
+        justify-content: start;
+    }
+    .fishimg{
+        height:180px;
+        width:230px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+        font-size: 18px;
+    }
+    .price{
+    margin: 2px auto;
+    font-size:23px;
+    }
+    .cartbutton{
+        margin: 1px auto;
+        font-size:20px;
+        padding: 2px 2px 0px 0px;
+        width:160px;
+    }
+.description{
+    font-size:12px;
 }
+    
+}
+
+    
 </style>
 </head>
 <body>
